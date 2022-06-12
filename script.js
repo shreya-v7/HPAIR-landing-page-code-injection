@@ -1,4 +1,4 @@
-console.log('henlu');
+console.log('Welcome to the HPAIR Website!');
 
 document.body.innerHTML += `<a href="#" id="scroll-button" style="position:fixed;
 right:10px;
@@ -77,6 +77,24 @@ border-bottom-color:#ffffff;"></span></a>
         ">
             <span id="floating-notif-people"></span>&nbsp;have applied for HPAIR ACONF in past&nbsp;<span id="floating-notif-hours"></span>
         </div>
+        <div onclick="closeNotif()"style="
+            color: white;
+            --size: 30px;
+            width: var(--size);
+            height: var(--size);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            transform: translate(50%,-50%);
+            background-color: #c4c4c4;
+            border-radius: 100px;
+        ">
+            &#10006;
+        </div>
     </div>
 `
 
@@ -112,5 +130,8 @@ $(document).ready(function(){
         $('#floating-notif-text1').html(notif_text);
         $('#floating-notif-hours').text(random_hours+" hours");
         $('#floating-notif-people').text(random_people+" people");
+    }
+    function closeNotif(){
+        $("#floating-notif").fadeOut(700);
     }
 });
