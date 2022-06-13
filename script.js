@@ -60,6 +60,7 @@ border-bottom-color:#ffffff;"></span></a>
             bottom: 15px;
             left: 15px;
             gap: 15px;
+            line-height: 1.5em;
         }
         #floating-notif-text {
             margin-top: 10px;
@@ -96,7 +97,7 @@ border-bottom-color:#ffffff;"></span></a>
             font-size: 17px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 400;
-            /* display: flex; */
+            line-height: 1.5em;
         }
         #floating-notif-people{
             font-weight: 700;
