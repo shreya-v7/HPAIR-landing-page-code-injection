@@ -29,8 +29,8 @@ border-bottom-color:#ffffff;"></span></a>
   padding: 11px 16px;
   border-radius: 100%;
   border-color: #25D366;"><i class="fa-brands fa-whatsapp"></i></a>
-</div>
-<div id="floating-notif">
+</div>`
+/*<div id="floating-notif">
         <div id="floating-notif-text">
             <span id="floating-notif-text1"> &nbsp;<span id="floating-notif-days"></span></span>
             <a id="floating-notif-button" href="https://my.hpair.org">Apply Now</a>
@@ -42,8 +42,8 @@ border-bottom-color:#ffffff;"></span></a>
         <div id="floating-notif-close" onclick="closeNotif()">
             &#10006;
         </div>
-    </div>
-    <style>
+    </div> */
+   /* <style>
         #floating-notif {
             width: 90vw;
             padding: 10px 0 15px 0;
@@ -125,7 +125,6 @@ border-bottom-color:#ffffff;"></span></a>
             }
             #floating-notif{
                 padding: 10px 0px 15px 0px;
-                /* width: 90vw; */
             }
             #floating-notif-text{
                 font-size: 16px;
@@ -151,8 +150,8 @@ border-bottom-color:#ffffff;"></span></a>
             }
         }
     </style>
-`
 
+*/
 $(document).ready(function(){ 
     $(window).scroll(function(){ 
         if ($(this).scrollTop() > 100) { 
@@ -166,6 +165,7 @@ $(document).ready(function(){
         return false; 
     }); 
 
+  /*
     $('#floating-notif').hide();
     setTimeout(() => {
         $('#floating-notif').fadeIn(500);
@@ -204,4 +204,4 @@ function resizeNotif(){
 
 function closeNotif(){
     $("#floating-notif").fadeOut(500);
-}
+} */
