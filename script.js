@@ -1,4 +1,4 @@
-console.log('Welcome to the HPAIR Website!');
+console.log('Welcome to the HPAIR!');
 
 document.body.innerHTML += `<a href="#" id="scroll-button" style="position:fixed;
 right:10px;
