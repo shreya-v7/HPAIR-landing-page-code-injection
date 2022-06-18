@@ -1,4 +1,4 @@
-console.log('Welcome to the HPAIR!');
+console.log('Welcome ');
 
 document.body.innerHTML += `<a href="#" id="scroll-button" style="position:fixed;
 right:10px;
@@ -29,7 +29,8 @@ border-bottom-color:#ffffff;"></span></a>
   padding: 11px 16px;
   border-radius: 100%;
   border-color: #25D366;"><i class="fa-brands fa-whatsapp"></i></a>
-</div>`
+</div>
+`
 
 $(document).ready(function(){ 
     $(window).scroll(function(){ 
@@ -43,3 +44,4 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, 600); 
         return false; 
     }); 
+});
