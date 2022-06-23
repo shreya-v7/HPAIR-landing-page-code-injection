@@ -1,4 +1,4 @@
-console.log('Tag test 1!');
+console.log('Tag test 2!');
 
 document.body.innerHTML += `<a href="#" id="scroll-button" style="position:fixed;
 right:10px;
