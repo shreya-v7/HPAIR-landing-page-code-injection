@@ -96,7 +96,7 @@ document.body.innerHTML += `<div id="floating-notif">
                 /* width: 90vw; */
             }
             #floating-notif-text{
-                font-size: 16px;
+                font-size: 14px;
                 gap:8px;
                 
             }
@@ -110,6 +110,7 @@ document.body.innerHTML += `<div id="floating-notif">
             #floating-notif-button{
                 padding: 8px 16px;
                 margin-right: 15px;
+                font-size:14px;
             }
             #floating-notif-info{
                 font-size: 13px;
