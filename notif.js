@@ -101,7 +101,7 @@ document.body.innerHTML += `<div id="floating-notif">
                 
             }
             #floating-notif-text1 {
-                width: 135px;
+                width: 138px;
                 margin-left:15px;
             }
             #floating-notif-days{
