@@ -128,7 +128,7 @@ $(document).ready(function(){
         $('#floating-notif').fadeIn(500);
     }, 3000);
     var today = new Date();
-    var conf = new Date(2022, 6, 3);
+    var conf = new Date(1656907200000); //epoch for 4 July, 2022 - 09:30 AM (IST)
     var one_day=1000*60*60*24;
     var days_left = Math.ceil((conf.getTime()-today.getTime())/(one_day));
     var notif_text = "Applications are closing";
