@@ -136,6 +136,7 @@ document.body.innerHTML += `
         </div>
         <a id="gTimerButton" href="https://my.hpair.org/">Apply Now</a>
     </div>
+    <div style="height:${$('#gTimerComponent').outerHeight()}px; width:100%  ;"></div>
 `;
 
 $(document).ready(function(){
