@@ -151,10 +151,10 @@ $(document).ready(function(){
         let day = hour * 24;
         let timeLeft = gTimerEnd - currentTime;
         let timeArray = []
-        timeArray.push(parseInt(timeLeft/day))
-        timeArray.push(parseInt((timeLeft%day)/hour))
-        timeArray.push(parseInt(((timeLeft%day)%hour)/minute));
-        timeArray.push(parseInt((((timeLeft%day)%hour)%minute)/second));
+        timeArray[0] = parseInt(timeLeft/day);
+        timeArray[1] = parseInt((timeLeft%day)/hour);
+        timeArray[2] = parseInt(((timeLeft%day)%hour)/minute);
+        timeArray[3] = parseInt((((timeLeft%day)%hour)%minute)/second);
         let timeDivs = document.querySelectorAll('.gTimerNumber');
         for(i in timeArray){
             let timeItem = timeArray[i].toString();
