@@ -1,4 +1,4 @@
-console.log('Timer!');
+console.log('tCheck1');
 
 document.body.innerHTML += `
 <style>
@@ -163,4 +163,5 @@ $(document).ready(function(){
     }
     setTime();
     const gTimerLoop = setInterval(setTime,1000); 
+    console.log('tCheck1');
 });
