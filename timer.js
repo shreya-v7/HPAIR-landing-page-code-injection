@@ -154,8 +154,9 @@ $(document).ready(function(){
         timeArray[1] = parseInt((timeLeft%day)/hour);
         timeArray[2] = parseInt(((timeLeft%day)%hour)/minute);
         timeArray[3] = parseInt((((timeLeft%day)%hour)%minute)/second);
+        console.log('timeArray',timeArray);
         let timeDivs = document.querySelectorAll('.gTimerNumber');
-        for(i in timeArray){
+        for(let i=0; i<timeArray.length; i++){
             let timeItem = timeArray[i].toString();
             console.log('0'+timeItem);
             timeDivs.item(i).innerText = timeItem.length==1?'0'+timeItem:timeItem;
