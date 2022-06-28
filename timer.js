@@ -1,5 +1,3 @@
-console.log('tCheck1');
-
 document.body.innerHTML += `
 <style>
     #gTimerComponent{
@@ -150,7 +148,8 @@ $(document).ready(function(){
         let hour = minute * 60;
         let day = hour * 24;
         let timeLeft = gTimerEnd - currentTime;
-        let timeArray = []
+        console.log('Time Left',timeLeft);
+        let timeArray = [];
         timeArray[0] = parseInt(timeLeft/day);
         timeArray[1] = parseInt((timeLeft%day)/hour);
         timeArray[2] = parseInt(((timeLeft%day)%hour)/minute);
@@ -164,5 +163,4 @@ $(document).ready(function(){
     }
     setTime();
     const gTimerLoop = setInterval(setTime,1000); 
-    console.log('tCheck1');
 });
