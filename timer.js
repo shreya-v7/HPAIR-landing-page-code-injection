@@ -158,6 +158,7 @@ $(document).ready(function(){
         let timeDivs = document.querySelectorAll('.gTimerNumber');
         for(i in timeArray){
             let timeItem = timeArray[i].toString();
+            console.log('0'+timeItem);
             timeDivs.item(i).innerText = timeItem.length==1?'0'+timeItem:timeItem;
         }
     }
