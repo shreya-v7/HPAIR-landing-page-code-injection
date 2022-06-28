@@ -112,6 +112,12 @@ document.body.innerHTML += `
                 font-size: 14px;
             }
         }
+        @media only screen and (max-width: 400px) {
+            #gTimerComponent{
+                justify-content: flex-start;
+                padding-left: 15px;
+            }
+        }
 </style>
 <div id="gTimerComponent">
         <div id="gTimerComponentBlock1">
