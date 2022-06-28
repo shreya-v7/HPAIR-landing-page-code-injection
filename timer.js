@@ -1,3 +1,5 @@
+console.log('Timer!');
+
 document.body.innerHTML += `
 <style>
     #gTimerComponent{
