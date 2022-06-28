@@ -8,7 +8,7 @@ document.body.innerHTML += `
             padding: 15px 0;
             background-color: #eeeeee;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             font-family: sans-serif;
             font-size: 20px;
@@ -70,13 +70,14 @@ document.body.innerHTML += `
         #gTimerSeconds::before{
             content: 'Seconds';
         }
-        @media only screen and (max-width: 1100px) {
+        @media only screen and (max-width: 1150px) {
             body{
                 background-color: lightblue;
             }
             #gTimerComponent{
-                justify-content: space-around;
+                /* justify-content: space-around; */
                 --componentGap : 10px;
+                gap: 30px;
             }
             #gTimerComponentBlock1{
                 flex-direction: column;
@@ -86,7 +87,7 @@ document.body.innerHTML += `
             }
             
         }
-        @media only screen and (max-width: 550px) {
+        @media only screen and (max-width: 700px) {
             #gTimerButton{
                 display: none;
             }
@@ -98,6 +99,17 @@ document.body.innerHTML += `
             }
             #gTimerSeconds::before{
                 content: 'Secs';
+            }
+        }
+        @media only screen and (max-width: 450px) {
+            #gTimerComponent{
+                font-size: 17px;
+            }
+            .gTimerNumber{
+                font-size: 28px;
+            }
+            .gTimerText2::before{
+                font-size: 14px;
             }
         }
 </style>
