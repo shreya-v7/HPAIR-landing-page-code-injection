@@ -152,7 +152,7 @@ document.body.innerHTML += `
                 </div>
             </div>
         </div>
-        <a id="gTimerButton" href="https://my.hpair.org/">Apply Now</a>
+        <p id="gTimerButton" onclick="redirectToPortal()">Apply Now</p>
     </div>
     <div style="height:${$('#gTimerComponent').outerHeight()}px; width:100%;"></div>
 `;
@@ -180,3 +180,9 @@ $(document).ready(function(){
     setTime();
     const gTimerLoop = setInterval(setTime,1000); 
 });
+
+function redirectToPortal(){
+    const portalURL = 'https://my.hpair.org';
+    let currentURL = window.location.toString();
+    window.location.href = portalURL + '?' + currentURL.split('?')[1];
+}
