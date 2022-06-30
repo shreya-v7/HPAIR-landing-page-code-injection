@@ -60,6 +60,11 @@ document.body.innerHTML += `
             background-color: var(--brandGreen);
             border-radius: 10px;
             text-decoration: none;
+            transition-duration: 0.2s;
+        }
+        #gTimerButton:hover{
+            cursor: pointer;
+            background-color: #017161;
         }
         #gTimerHours::before{
             content: 'Hours';
